@@ -1,37 +1,36 @@
 package Curso.java.EstruturaDeDados;
 
-public class No {
+public class No <T>{
 
-	private String conteudo;
+	private T conteudo;
 
-	private No proximoNo;
+	private No<T> proximoNo;
 
-	public No(String conteudo) {
+	public No(T conteudo) {
 		this.proximoNo = null;
 		this.conteudo = conteudo;
 	}
 
-	public String getConteudo() {
+	public T getConteudo() {
 		return conteudo;
 	}
 
-	public No getProximoNo() {
+	public No<T> getProximoNo() {
 		return proximoNo;
 	}
 
-	public void setConteudo(String conteudo) {
+	public void setConteudo(T conteudo) {
 		this.conteudo = conteudo;
 	}
 
-	public void setProximoNo(No proximoNo) {
+	public void setProximoNo(No<T> proximoNo) {
 		this.proximoNo = proximoNo;
 	}
 
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "no{" + " conteudo = "+ conteudo + '\'' + 
-				'}';
+		return "no{" + " conteudo = "+ conteudo + '\'' + '}';
 	}
 
 }

@@ -4,12 +4,12 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Fila minhaFila = new Fila();
+		Fila<String> minhaFila = new Fila<>();
 		
-		minhaFila.enqueue(new No("Primeiro"));
-		minhaFila.enqueue(new No("Segundo"));
-		minhaFila.enqueue(new No("Terceiro"));
-		minhaFila.enqueue(new No("Quarto"));
+		minhaFila.enqueue("Primeiro");
+		minhaFila.enqueue("Segundo");
+		minhaFila.enqueue("Terceiro");
+		minhaFila.enqueue("Quarto");
 		
 		
 		
@@ -17,7 +17,7 @@ public class main {
 		
 		
 		System.out.println(minhaFila.dequeue());
-		minhaFila.enqueue(new No("Ultimo"));
+		minhaFila.enqueue("Ultimo");
 		System.out.println(minhaFila.dequeue());
 		System.out.println(minhaFila.dequeue());
 		
